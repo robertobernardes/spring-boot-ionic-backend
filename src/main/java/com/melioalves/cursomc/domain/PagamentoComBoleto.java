@@ -3,12 +3,14 @@ package com.melioalves.cursomc.domain;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.melioalves.cursomc.domain.enums.EstadoPagamento;
 
 @Entity
+@Table(name= "pagamento_com_boleto", schema = "teste")
 @JsonTypeName("pagamentoComBoleto")
 public class PagamentoComBoleto extends Pagamento {
 	
